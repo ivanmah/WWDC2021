@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D0794C326A94EDC0086111D /* WWDC2021App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0794C226A94EDC0086111D /* WWDC2021App.swift */; };
+		2D0794C526A94EDC0086111D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0794C426A94EDC0086111D /* ContentView.swift */; };
+		2D0794C726A94EDE0086111D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0794C626A94EDE0086111D /* Assets.xcassets */; };
+		2D0794CA26A94EDE0086111D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0794C926A94EDE0086111D /* Preview Assets.xcassets */; };
+		2DC4D53126A951BC0011E9DB /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4D53026A951BC0011E9DB /* NewView.swift */; };
+		2DC4D53326A955A10011E9DB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4D53226A955A10011E9DB /* FirstViewController.swift */; };
+		5914869510682F3C4C0D9C49 /* Pods_WWDC2021.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C00417EA57188746E8CCEBF /* Pods_WWDC2021.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D0794D426A94EF90086111D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D0794D026A94EF90086111D /* WWDC2021Framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D5465532677AE78001A7061;
+			remoteInfo = WWDC2021Framework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D0794BF26A94EDC0086111D /* WWDC2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC2021.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D0794C226A94EDC0086111D /* WWDC2021App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDC2021App.swift; sourceTree = "<group>"; };
+		2D0794C426A94EDC0086111D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2D0794C626A94EDE0086111D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D0794C926A94EDE0086111D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2D0794D026A94EF90086111D /* WWDC2021Framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WWDC2021Framework.xcodeproj; path = ../../../WWDC2021Framework/WWDC2021Framework.xcodeproj; sourceTree = "<group>"; };
+		2DC4D53026A951BC0011E9DB /* NewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
+		2DC4D53226A955A10011E9DB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		5C00417EA57188746E8CCEBF /* Pods_WWDC2021.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWDC2021.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72B8CC443ADAD33585DBFCAF /* Pods-WWDC2021.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWDC2021.debug.xcconfig"; path = "Target Support Files/Pods-WWDC2021/Pods-WWDC2021.debug.xcconfig"; sourceTree = "<group>"; };
+		BE61CC5AED7FF088EDD67A24 /* Pods-WWDC2021.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWDC2021.release.xcconfig"; path = "Target Support Files/Pods-WWDC2021/Pods-WWDC2021.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D0794BC26A94EDC0086111D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5914869510682F3C4C0D9C49 /* Pods_WWDC2021.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D0794B626A94EDC0086111D = {
+			isa = PBXGroup;
+			children = (
+				2D0794C126A94EDC0086111D /* WWDC2021 */,
+				2D0794C026A94EDC0086111D /* Products */,
+				4F970BE7C4C18639438D68E8 /* Pods */,
+				9313558DCE829189281AE699 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D0794C026A94EDC0086111D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D0794BF26A94EDC0086111D /* WWDC2021.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D0794C126A94EDC0086111D /* WWDC2021 */ = {
+			isa = PBXGroup;
+			children = (
+				2D0794C226A94EDC0086111D /* WWDC2021App.swift */,
+				2D0794C426A94EDC0086111D /* ContentView.swift */,
+				2DC4D53026A951BC0011E9DB /* NewView.swift */,
+				2DC4D53226A955A10011E9DB /* FirstViewController.swift */,
+				2D0794C626A94EDE0086111D /* Assets.xcassets */,
+				2D0794C826A94EDE0086111D /* Preview Content */,
+			);
+			path = WWDC2021;
+			sourceTree = "<group>";
+		};
+		2D0794C826A94EDE0086111D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2D0794D026A94EF90086111D /* WWDC2021Framework.xcodeproj */,
+				2D0794C926A94EDE0086111D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2D0794D126A94EF90086111D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D0794D526A94EF90086111D /* WWDC2021Framework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F970BE7C4C18639438D68E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72B8CC443ADAD33585DBFCAF /* Pods-WWDC2021.debug.xcconfig */,
+				BE61CC5AED7FF088EDD67A24 /* Pods-WWDC2021.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		9313558DCE829189281AE699 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C00417EA57188746E8CCEBF /* Pods_WWDC2021.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D0794BE26A94EDC0086111D /* WWDC2021 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D0794CD26A94EDE0086111D /* Build configuration list for PBXNativeTarget "WWDC2021" */;
+			buildPhases = (
+				F1D025DA8E13DBE9E584E6B4 /* [CP] Check Pods Manifest.lock */,
+				2D0794BB26A94EDC0086111D /* Sources */,
+				2D0794BC26A94EDC0086111D /* Frameworks */,
+				2D0794BD26A94EDC0086111D /* Resources */,
+				9F57428CC47E68126ED15F29 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WWDC2021;
+			productName = WWDC2021;
+			productReference = 2D0794BF26A94EDC0086111D /* WWDC2021.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D0794B726A94EDC0086111D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					2D0794BE26A94EDC0086111D = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 2D0794BA26A94EDC0086111D /* Build configuration list for PBXProject "WWDC2021" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D0794B626A94EDC0086111D;
+			productRefGroup = 2D0794C026A94EDC0086111D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2D0794D126A94EF90086111D /* Products */;
+					ProjectRef = 2D0794D026A94EF90086111D /* WWDC2021Framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				2D0794BE26A94EDC0086111D /* WWDC2021 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2D0794D526A94EF90086111D /* WWDC2021Framework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WWDC2021Framework.framework;
+			remoteRef = 2D0794D426A94EF90086111D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D0794BD26A94EDC0086111D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D0794CA26A94EDE0086111D /* Preview Assets.xcassets in Resources */,
+				2D0794C726A94EDE0086111D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F57428CC47E68126ED15F29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WWDC2021/Pods-WWDC2021-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WWDC2021/Pods-WWDC2021-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WWDC2021/Pods-WWDC2021-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1D025DA8E13DBE9E584E6B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WWDC2021-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D0794BB26A94EDC0086111D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DC4D53126A951BC0011E9DB /* NewView.swift in Sources */,
+				2D0794C526A94EDC0086111D /* ContentView.swift in Sources */,
+				2D0794C326A94EDC0086111D /* WWDC2021App.swift in Sources */,
+				2DC4D53326A955A10011E9DB /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2D0794CB26A94EDE0086111D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D0794CC26A94EDE0086111D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D0794CE26A94EDE0086111D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72B8CC443ADAD33585DBFCAF /* Pods-WWDC2021.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WWDC2021/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivanmah.demo.WWDC2021;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D0794CF26A94EDE0086111D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE61CC5AED7FF088EDD67A24 /* Pods-WWDC2021.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WWDC2021/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivanmah.demo.WWDC2021;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D0794BA26A94EDC0086111D /* Build configuration list for PBXProject "WWDC2021" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D0794CB26A94EDE0086111D /* Debug */,
+				2D0794CC26A94EDE0086111D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D0794CD26A94EDE0086111D /* Build configuration list for PBXNativeTarget "WWDC2021" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D0794CE26A94EDE0086111D /* Debug */,
+				2D0794CF26A94EDE0086111D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D0794B726A94EDC0086111D /* Project object */;
+}
