@@ -64,7 +64,7 @@ extension FoundationWithDateFormattingMoreViewContent {
         let format = Date.FormatStyle().year().month().day()
 
         do {
-            return try Date("Jul 29 2021", strategy: format)
+            return try Date("29 July 2021", strategy: format)
         } catch {
             return now
         }
