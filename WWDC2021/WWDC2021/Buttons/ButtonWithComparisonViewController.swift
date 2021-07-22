@@ -59,7 +59,7 @@ extension ButtonWithComparisonViewController {
             view.addSubview(oldButton)
 
             oldButton.snp.remakeConstraints { make in
-                make.top.equalToSuperview().offset(20.0)
+                make.top.equalToSuperview().offset(100.0)
                 make.size.equalTo(CGSize(width: 200.0, height: 44.0))
                 make.centerX.equalToSuperview()
             }

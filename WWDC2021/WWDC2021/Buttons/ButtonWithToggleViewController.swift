@@ -52,7 +52,7 @@ extension ButtonWithToggleViewController {
             view.addSubview(firstButton)
 
             firstButton.snp.remakeConstraints { make in
-                make.top.equalToSuperview().offset(20.0)
+                make.top.equalToSuperview().offset(100.0)
                 make.centerX.equalToSuperview()
             }
         }
