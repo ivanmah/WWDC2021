@@ -41,13 +41,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D0794B526A945E50086111D /* Implementation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Implementation;
-			sourceTree = "<group>";
-		};
 		2D5465492677AE78001A7061 = {
 			isa = PBXGroup;
 			children = (
@@ -69,7 +62,6 @@
 		2D5465552677AE78001A7061 /* WWDC2021Framework */ = {
 			isa = PBXGroup;
 			children = (
-				2D0794B526A945E50086111D /* Implementation */,
 				2D54656F2677AF06001A7061 /* Code */,
 				2D5465562677AE78001A7061 /* WWDC2021Framework.h */,
 				2D5465572677AE78001A7061 /* WWDC2021Framework.docc */,

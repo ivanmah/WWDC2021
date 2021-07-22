@@ -43,10 +43,10 @@ class UIKitButton {
 
     func createButtonWithConfigurationUpdateHandler() {
         addToCartButtonWithConfigurationUpdateHandler = UIButton(type: .system)
-        addToCartButton?.configuration = .filled()
-        addToCartButton?.setTitle("Add To Cart", for: [])
+        addToCartButtonWithConfigurationUpdateHandler?.configuration = .filled()
+        addToCartButtonWithConfigurationUpdateHandler?.setTitle("Add To Cart", for: [])
 
-        addToCartButton?.configurationUpdateHandler = { [weak self] button in
+        addToCartButtonWithConfigurationUpdateHandler?.configurationUpdateHandler = { [weak self] button in
             guard let self = self else { return }
 
             var config = button.configuration
