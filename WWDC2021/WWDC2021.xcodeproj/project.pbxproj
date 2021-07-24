@@ -19,6 +19,9 @@
 		2D75AC4026A9D3E800C0113A /* FoundationWithDateFormattingMoreViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D75AC3F26A9D3E800C0113A /* FoundationWithDateFormattingMoreViewContent.swift */; };
 		2D75AC4226A9DA6900C0113A /* FoundationWithStringFormattingComparisonContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D75AC4126A9DA6800C0113A /* FoundationWithStringFormattingComparisonContentView.swift */; };
 		2D75AC4426A9DC6B00C0113A /* FoundationWithNumberFormattingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D75AC4326A9DC6B00C0113A /* FoundationWithNumberFormattingContentView.swift */; };
+		2D75AC4726AC0B8C00C0113A /* AutoComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D75AC4626AC0B8C00C0113A /* AutoComplete.swift */; };
+		2D75AC4926AC0D7200C0113A /* ColumnBreakpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D75AC4826AC0D7200C0113A /* ColumnBreakpoint.swift */; };
+		2D75AC4B26AC0F8700C0113A /* MinimizeErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D75AC4A26AC0F8700C0113A /* MinimizeErrors.swift */; };
 		2DC4D53326A955A10011E9DB /* ButtonWithComparisonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4D53226A955A10011E9DB /* ButtonWithComparisonViewController.swift */; };
 		2DEB723926A9871300A39074 /* ButtonWithConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB723826A9871300A39074 /* ButtonWithConfigurationViewController.swift */; };
 		2DEB723B26A989C300A39074 /* ButtonWithConfigurationUpdateHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB723A26A989C300A39074 /* ButtonWithConfigurationUpdateHandlerViewController.swift */; };
@@ -52,6 +55,9 @@
 		2D75AC3F26A9D3E800C0113A /* FoundationWithDateFormattingMoreViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationWithDateFormattingMoreViewContent.swift; sourceTree = "<group>"; };
 		2D75AC4126A9DA6800C0113A /* FoundationWithStringFormattingComparisonContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationWithStringFormattingComparisonContentView.swift; sourceTree = "<group>"; };
 		2D75AC4326A9DC6B00C0113A /* FoundationWithNumberFormattingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationWithNumberFormattingContentView.swift; sourceTree = "<group>"; };
+		2D75AC4626AC0B8C00C0113A /* AutoComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoComplete.swift; sourceTree = "<group>"; };
+		2D75AC4826AC0D7200C0113A /* ColumnBreakpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnBreakpoint.swift; sourceTree = "<group>"; };
+		2D75AC4A26AC0F8700C0113A /* MinimizeErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimizeErrors.swift; sourceTree = "<group>"; };
 		2DC4D53226A955A10011E9DB /* ButtonWithComparisonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithComparisonViewController.swift; sourceTree = "<group>"; };
 		2DEB723826A9871300A39074 /* ButtonWithConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithConfigurationViewController.swift; sourceTree = "<group>"; };
 		2DEB723A26A989C300A39074 /* ButtonWithConfigurationUpdateHandlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithConfigurationUpdateHandlerViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +101,7 @@
 		2D0794C126A94EDC0086111D /* WWDC2021 */ = {
 			isa = PBXGroup;
 			children = (
+				2D75AC4526AC0B5600C0113A /* Xcode */,
 				2D57E76226A9B76700512586 /* Foundation */,
 				2D57E75F26A9A7C600512586 /* Buttons */,
 				2D0794C226A94EDC0086111D /* WWDC2021App.swift */,
@@ -147,6 +154,16 @@
 				2D75AC4326A9DC6B00C0113A /* FoundationWithNumberFormattingContentView.swift */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		2D75AC4526AC0B5600C0113A /* Xcode */ = {
+			isa = PBXGroup;
+			children = (
+				2D75AC4626AC0B8C00C0113A /* AutoComplete.swift */,
+				2D75AC4826AC0D7200C0113A /* ColumnBreakpoint.swift */,
+				2D75AC4A26AC0F8700C0113A /* MinimizeErrors.swift */,
+			);
+			path = Xcode;
 			sourceTree = "<group>";
 		};
 		4F970BE7C4C18639438D68E8 /* Pods */ = {
@@ -297,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D75AC4B26AC0F8700C0113A /* MinimizeErrors.swift in Sources */,
 				2D0794C526A94EDC0086111D /* ButtonsContentView.swift in Sources */,
 				2D57E76426A9B77700512586 /* FoundationContentView.swift in Sources */,
 				2D75AC4226A9DA6900C0113A /* FoundationWithStringFormattingComparisonContentView.swift in Sources */,
@@ -310,8 +328,10 @@
 				2D57E76126A9A9A200512586 /* ContentView.swift in Sources */,
 				2D75AC4026A9D3E800C0113A /* FoundationWithDateFormattingMoreViewContent.swift in Sources */,
 				2DEB723F26A993E800A39074 /* ButtonWithToggleViewController.swift in Sources */,
+				2D75AC4926AC0D7200C0113A /* ColumnBreakpoint.swift in Sources */,
 				2DEB723D26A98C0A00A39074 /* ButtonWithUIActionViewController.swift in Sources */,
 				2DEB723B26A989C300A39074 /* ButtonWithConfigurationUpdateHandlerViewController.swift in Sources */,
+				2D75AC4726AC0B8C00C0113A /* AutoComplete.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
