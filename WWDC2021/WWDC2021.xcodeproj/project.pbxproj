@@ -25,6 +25,7 @@
 		2D75AC4B26AC0F8700C0113A /* MinimizeErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D75AC4A26AC0F8700C0113A /* MinimizeErrors.swift */; };
 		2D75AC4E26AC523E00C0113A /* AsyncAwaitComparisonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D75AC4D26AC523E00C0113A /* AsyncAwaitComparisonViewController.swift */; };
 		2D75AC5026AC524D00C0113A /* AsyncAwaitComparisonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D75AC4F26AC524D00C0113A /* AsyncAwaitComparisonViewModel.swift */; };
+		2D9CEFD026AC796800E2C452 /* AsyncAwaitMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CEFCF26AC796800E2C452 /* AsyncAwaitMore.swift */; };
 		2DC4D53326A955A10011E9DB /* ButtonWithComparisonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4D53226A955A10011E9DB /* ButtonWithComparisonViewController.swift */; };
 		2DEB723926A9871300A39074 /* ButtonWithConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB723826A9871300A39074 /* ButtonWithConfigurationViewController.swift */; };
 		2DEB723B26A989C300A39074 /* ButtonWithConfigurationUpdateHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB723A26A989C300A39074 /* ButtonWithConfigurationUpdateHandlerViewController.swift */; };
@@ -71,6 +72,7 @@
 		2D75AC4A26AC0F8700C0113A /* MinimizeErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimizeErrors.swift; sourceTree = "<group>"; };
 		2D75AC4D26AC523E00C0113A /* AsyncAwaitComparisonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitComparisonViewController.swift; sourceTree = "<group>"; };
 		2D75AC4F26AC524D00C0113A /* AsyncAwaitComparisonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitComparisonViewModel.swift; sourceTree = "<group>"; };
+		2D9CEFCF26AC796800E2C452 /* AsyncAwaitMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitMore.swift; sourceTree = "<group>"; };
 		2DC4D53226A955A10011E9DB /* ButtonWithComparisonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithComparisonViewController.swift; sourceTree = "<group>"; };
 		2DEB723826A9871300A39074 /* ButtonWithConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithConfigurationViewController.swift; sourceTree = "<group>"; };
 		2DEB723A26A989C300A39074 /* ButtonWithConfigurationUpdateHandlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithConfigurationUpdateHandlerViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +190,17 @@
 			path = Xcode;
 			sourceTree = "<group>";
 		};
+		2D75AC4C26AC521E00C0113A /* AsyncAwait */ = {
+			isa = PBXGroup;
+			children = (
+				2D103D5F26AC5F02002676C8 /* AsyncAwaitContentView.swift */,
+				2D75AC4D26AC523E00C0113A /* AsyncAwaitComparisonViewController.swift */,
+				2D75AC4F26AC524D00C0113A /* AsyncAwaitComparisonViewModel.swift */,
+				2D9CEFCF26AC796800E2C452 /* AsyncAwaitMore.swift */,
+			);
+			path = AsyncAwait;
+			sourceTree = "<group>";
+		};
 		3CD6274F26AC667F00B79F72 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,16 +213,6 @@
 				3CD6275626AC667F00B79F72 /* SwiftUIAsyncImage.swift */,
 			);
 			path = SwiftUI;
-			sourceTree = "<group>";
-		};
-		2D75AC4C26AC521E00C0113A /* AsyncAwait */ = {
-			isa = PBXGroup;
-			children = (
-				2D103D5F26AC5F02002676C8 /* AsyncAwaitContentView.swift */,
-				2D75AC4D26AC523E00C0113A /* AsyncAwaitComparisonViewController.swift */,
-				2D75AC4F26AC524D00C0113A /* AsyncAwaitComparisonViewModel.swift */,
-			);
-			path = AsyncAwait;
 			sourceTree = "<group>";
 		};
 		4F970BE7C4C18639438D68E8 /* Pods */ = {
@@ -361,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D75AC4B26AC0F8700C0113A /* MinimizeErrors.swift in Sources */,
+				2D9CEFD026AC796800E2C452 /* AsyncAwaitMore.swift in Sources */,
 				2D0794C526A94EDC0086111D /* ButtonsContentView.swift in Sources */,
 				2D57E76426A9B77700512586 /* FoundationContentView.swift in Sources */,
 				2D75AC4226A9DA6900C0113A /* FoundationWithStringFormattingComparisonContentView.swift in Sources */,

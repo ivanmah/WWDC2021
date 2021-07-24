@@ -128,6 +128,8 @@ extension AsyncAwaitComparisonViewController {
                     self.showAlert(text: jsonString)
                 }
             }
+        } catch AsyncAwaitComparisonViewModel.Errors.urlEncodingError {
+            
         } catch AsyncAwaitComparisonViewModel.Errors.httpResponseError {
 
         } catch AsyncAwaitComparisonViewModel.Errors.dataEncodingError {
