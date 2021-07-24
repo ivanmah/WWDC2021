@@ -18,11 +18,14 @@ struct ContentView: View {
                 NavigationLink("Changes in Foundation") {
                     FoundationContentView()
                 }
-                
+
                 NavigationLink("SwiftUI") {
                     SwiftUIContentView()
                 }
-                
+
+                NavigationLink("Swift 5.5: Async/Await") {
+                    AsyncAwaitContentView()
+                }
             }
             .navigationTitle("WWDC \(ColumnBreakpoint().parseArray(values: ["1", "2"]).count)021 Demo")
         }
