@@ -24,7 +24,7 @@ struct ContentView: View {
                 }
                 
             }
-            .navigationTitle("WWDC 2021 Demo")
+            .navigationTitle("WWDC \(ColumnBreakpoint().parseArray(values: ["1", "2"]).count)021 Demo")
         }
     }
 }
