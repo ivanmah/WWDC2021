@@ -9,6 +9,7 @@ import Foundation
 
 struct AsyncAwaitComparisonViewModel {
     enum Errors: Error {
+        case urlEncodingError
         case httpResponseError
         case dataEncodingError
         case otherGenericError
@@ -38,7 +39,7 @@ struct AsyncAwaitComparisonViewModel {
     }
 
     func newGetJSON() async throws -> String? {
-        guard let url = URL(string: urlString) else { return nil }
+        guard let url = URL(string: urlString) else { throw Errors.urlEncodingError }
 
         let request = URLRequest(url: url)
         let (data, urlResponse) = try await URLSession.shared.data(for: request)
