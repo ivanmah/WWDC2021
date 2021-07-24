@@ -6,6 +6,8 @@ workspace 'WWDC2021'
 
 def common_pods
     pod 'SnapKit', '~> 5.0'
+    pod 'RxCocoa', '~> 6.0'
+    pod 'RxSwift', '~> 6.0'
 end
 
 target 'WWDC2021' do
