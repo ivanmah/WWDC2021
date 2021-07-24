@@ -18,6 +18,10 @@ struct ContentView: View {
                 NavigationLink("Changes in Foundation") {
                     FoundationContentView()
                 }
+
+                NavigationLink("Swift 5.5: Async/Await") {
+                    AsyncAwaitContentView()
+                }
             }
             .navigationTitle("WWDC \(ColumnBreakpoint().parseArray(values: ["1", "2"]).count)021 Demo")
         }
