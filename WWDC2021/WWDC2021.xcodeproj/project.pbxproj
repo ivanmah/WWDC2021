@@ -17,6 +17,11 @@
 		2DEB723B26A989C300A39074 /* ButtonWithConfigurationUpdateHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB723A26A989C300A39074 /* ButtonWithConfigurationUpdateHandlerViewController.swift */; };
 		2DEB723D26A98C0A00A39074 /* ButtonWithUIActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB723C26A98C0A00A39074 /* ButtonWithUIActionViewController.swift */; };
 		2DEB723F26A993E800A39074 /* ButtonWithToggleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB723E26A993E800A39074 /* ButtonWithToggleViewController.swift */; };
+		3CD6272D26ABD02300B79F72 /* ButtonMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6272C26ABD02300B79F72 /* ButtonMainView.swift */; };
+		3CD6273326ABECE100B79F72 /* SwiftUIMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6273226ABECE100B79F72 /* SwiftUIMainView.swift */; };
+		3CD6273526ABF06000B79F72 /* SwiftUITextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6273426ABF06000B79F72 /* SwiftUITextfieldView.swift */; };
+		3CD6273726ABF9B900B79F72 /* SwiftUIListview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6273626ABF9B900B79F72 /* SwiftUIListview.swift */; };
+		3CD6273926AC0DD400B79F72 /* SwiftUIListSwipeActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6273826AC0DD400B79F72 /* SwiftUIListSwipeActionView.swift */; };
 		5914869510682F3C4C0D9C49 /* Pods_WWDC2021.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C00417EA57188746E8CCEBF /* Pods_WWDC2021.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +48,11 @@
 		2DEB723A26A989C300A39074 /* ButtonWithConfigurationUpdateHandlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithConfigurationUpdateHandlerViewController.swift; sourceTree = "<group>"; };
 		2DEB723C26A98C0A00A39074 /* ButtonWithUIActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithUIActionViewController.swift; sourceTree = "<group>"; };
 		2DEB723E26A993E800A39074 /* ButtonWithToggleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithToggleViewController.swift; sourceTree = "<group>"; };
+		3CD6272C26ABD02300B79F72 /* ButtonMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonMainView.swift; sourceTree = "<group>"; };
+		3CD6273226ABECE100B79F72 /* SwiftUIMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMainView.swift; sourceTree = "<group>"; };
+		3CD6273426ABF06000B79F72 /* SwiftUITextfieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITextfieldView.swift; sourceTree = "<group>"; };
+		3CD6273626ABF9B900B79F72 /* SwiftUIListview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIListview.swift; sourceTree = "<group>"; };
+		3CD6273826AC0DD400B79F72 /* SwiftUIListSwipeActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIListSwipeActionView.swift; sourceTree = "<group>"; };
 		5C00417EA57188746E8CCEBF /* Pods_WWDC2021.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWDC2021.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B8CC443ADAD33585DBFCAF /* Pods-WWDC2021.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWDC2021.debug.xcconfig"; path = "Target Support Files/Pods-WWDC2021/Pods-WWDC2021.debug.xcconfig"; sourceTree = "<group>"; };
 		BE61CC5AED7FF088EDD67A24 /* Pods-WWDC2021.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWDC2021.release.xcconfig"; path = "Target Support Files/Pods-WWDC2021/Pods-WWDC2021.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +91,7 @@
 		2D0794C126A94EDC0086111D /* WWDC2021 */ = {
 			isa = PBXGroup;
 			children = (
+				3CD6272F26ABEC9000B79F72 /* SwiftUI */,
 				2D57E75F26A9A7C600512586 /* Buttons */,
 				2D0794C226A94EDC0086111D /* WWDC2021App.swift */,
 				2D0794C426A94EDC0086111D /* ContentView.swift */,
@@ -116,8 +127,20 @@
 				2DEB723C26A98C0A00A39074 /* ButtonWithUIActionViewController.swift */,
 				2DEB723E26A993E800A39074 /* ButtonWithToggleViewController.swift */,
 				2D57E75C26A9A43300512586 /* ButtonWithPopup.swift */,
+				3CD6272C26ABD02300B79F72 /* ButtonMainView.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		3CD6272F26ABEC9000B79F72 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				3CD6273226ABECE100B79F72 /* SwiftUIMainView.swift */,
+				3CD6273426ABF06000B79F72 /* SwiftUITextfieldView.swift */,
+				3CD6273626ABF9B900B79F72 /* SwiftUIListview.swift */,
+				3CD6273826AC0DD400B79F72 /* SwiftUIListSwipeActionView.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 		4F970BE7C4C18639438D68E8 /* Pods */ = {
@@ -269,6 +292,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D0794C526A94EDC0086111D /* ContentView.swift in Sources */,
+				3CD6272D26ABD02300B79F72 /* ButtonMainView.swift in Sources */,
+				3CD6273726ABF9B900B79F72 /* SwiftUIListview.swift in Sources */,
 				2DEB723926A9871300A39074 /* ButtonWithConfigurationViewController.swift in Sources */,
 				2D0794C326A94EDC0086111D /* WWDC2021App.swift in Sources */,
 				2DC4D53326A955A10011E9DB /* ButtonComparisonViewController.swift in Sources */,
@@ -276,6 +301,9 @@
 				2DEB723F26A993E800A39074 /* ButtonWithToggleViewController.swift in Sources */,
 				2DEB723D26A98C0A00A39074 /* ButtonWithUIActionViewController.swift in Sources */,
 				2DEB723B26A989C300A39074 /* ButtonWithConfigurationUpdateHandlerViewController.swift in Sources */,
+				3CD6273526ABF06000B79F72 /* SwiftUITextfieldView.swift in Sources */,
+				3CD6273326ABECE100B79F72 /* SwiftUIMainView.swift in Sources */,
+				3CD6273926AC0DD400B79F72 /* SwiftUIListSwipeActionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
