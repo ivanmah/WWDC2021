@@ -1,17 +1,17 @@
 //
-//  ButtonMainView.swift
-//  ButtonMainView
+//  ButtonsContentView.swift
+//  WWDC2021
 //
-//  Created by Chia Wei Zheng Terry on 24/7/21.
+//  Created by Ivan Mah on 22/7/21.
 //
 
 import SwiftUI
 
-struct ButtonMainView: View {
+struct ButtonsContentView: View {
     var body: some View {
-        VStack(alignment: .center, spacing: 20.0) {
+        VStack(spacing: 20.0) {
             NavigationLink("Button Comparison") {
-                ButtonComparisonViewControllerRepresentable()
+                ButtonWithComparisonViewControllerRepresentable()
                     .navigationTitle("Comparison")
                     .navigationBarTitleDisplayMode(.inline)
             }
@@ -46,11 +46,13 @@ struct ButtonMainView: View {
                     .navigationBarTitleDisplayMode(.inline)
             }
         }
+        .navigationTitle("Buttons")
     }
 }
 
-struct ButtonMainView_Previews: PreviewProvider {
+struct ButtonsContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonMainView()
+        ButtonsContentView()
+            .previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro Max"))
     }
 }

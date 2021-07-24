@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SwiftUIMainView: View {
+struct SwiftUIContentView: View {
     
     var body: some View {
         VStack (alignment: .center, spacing: 20) {
@@ -21,6 +21,6 @@ struct SwiftUIMainView: View {
 
 struct SwiftUIMainView_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIMainView()
+        SwiftUIContentView()
     }
 }

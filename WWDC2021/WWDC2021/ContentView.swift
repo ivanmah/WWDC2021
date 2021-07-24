@@ -10,9 +10,19 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            VStack(alignment: .center, spacing: 20.0) {
-                NavigationLink("Buttons", destination: ButtonMainView())
-                NavigationLink("SwiftUI", destination: SwiftUIMainView())
+            VStack(spacing: 20.0) {
+                NavigationLink("What's New In UIButton") {
+                    ButtonsContentView()
+                }
+
+                NavigationLink("Changes in Foundation") {
+                    FoundationContentView()
+                }
+                
+                NavigationLink("SwiftUI") {
+                    SwiftUIContentView()
+                }
+                
             }
             .navigationTitle("WWDC 2021 Demo")
         }
@@ -25,3 +35,4 @@ struct ContentView_Previews: PreviewProvider {
             .previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro Max"))
     }
 }
+

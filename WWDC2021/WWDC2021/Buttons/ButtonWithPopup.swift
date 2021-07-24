@@ -1,6 +1,6 @@
 //
 //  ButtonWithPopup.swift
-//  ButtonWithPopup
+//  WWDC2021
 //
 //  Created by Ivan Mah on 22/7/21.
 //
@@ -66,7 +66,7 @@ extension ButtonWithPopupViewController {
             view.addSubview(firstButton)
 
             firstButton.snp.remakeConstraints { make in
-                make.top.equalToSuperview().offset(20.0)
+                make.top.equalToSuperview().offset(100.0)
                 make.centerX.equalToSuperview()
             }
         }

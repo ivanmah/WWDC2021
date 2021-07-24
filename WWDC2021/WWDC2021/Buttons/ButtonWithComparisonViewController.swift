@@ -1,5 +1,5 @@
 //
-//  ButtonComparisonViewController.swift
+//  ButtonWithComparisonViewController.swift
 //  WWDC2021
 //
 //  Created by Ivan Mah on 22/7/21.
@@ -10,17 +10,17 @@ import SwiftUI
 
 import SnapKit
 
-struct ButtonComparisonViewControllerRepresentable: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> ButtonComparisonViewController {
-        return ButtonComparisonViewController()
+struct ButtonWithComparisonViewControllerRepresentable: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> ButtonWithComparisonViewController {
+        return ButtonWithComparisonViewController()
     }
 
-    func updateUIViewController(_ uiViewController: ButtonComparisonViewController, context: Context) {
+    func updateUIViewController(_ uiViewController: ButtonWithComparisonViewController, context: Context) {
         // do nothing
     }
 }
 
-class ButtonComparisonViewController: UIViewController {
+class ButtonWithComparisonViewController: UIViewController {
     var oldButton: UIButton!
     var newButton: UIButton!
 
@@ -31,7 +31,7 @@ class ButtonComparisonViewController: UIViewController {
     }
 }
 
-extension ButtonComparisonViewController {
+extension ButtonWithComparisonViewController {
     private func setupViewController() {
         setupOldButton()
         setupNewButton()
@@ -59,7 +59,7 @@ extension ButtonComparisonViewController {
             view.addSubview(oldButton)
 
             oldButton.snp.remakeConstraints { make in
-                make.top.equalToSuperview().offset(20.0)
+                make.top.equalToSuperview().offset(100.0)
                 make.size.equalTo(CGSize(width: 200.0, height: 44.0))
                 make.centerX.equalToSuperview()
             }
