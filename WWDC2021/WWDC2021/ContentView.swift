@@ -19,6 +19,10 @@ struct ContentView: View {
                     FoundationContentView()
                 }
 
+                NavigationLink("SwiftUI") {
+                    SwiftUIContentView()
+                }
+
                 NavigationLink("Swift 5.5: Async/Await") {
                     AsyncAwaitContentView()
                 }
