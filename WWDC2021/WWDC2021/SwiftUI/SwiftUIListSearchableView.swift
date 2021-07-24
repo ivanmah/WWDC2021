@@ -9,7 +9,7 @@ import SwiftUI
 
 let listItems = ["Red", "Orange", "Green", "Blue", "Purple","Yellow","Pink"]
 
-struct SwiftUIListview: View {
+struct SwiftUIListSearchableView: View {
     
     @State private var searchQuery = ""
     
@@ -36,6 +36,6 @@ struct SwiftUIListview: View {
 
 struct SwiftUIListview_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIListview()
+        SwiftUIListSearchableView()
     }
 }
