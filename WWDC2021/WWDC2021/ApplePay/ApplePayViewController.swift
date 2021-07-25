@@ -36,6 +36,7 @@ extension ApplePayViewController {
     private func setupViewController() {
         viewModel.addToShoppingCart(item: ApplePayItem(name: "Tickets", price: "25.00"))
         viewModel.addToShoppingCart(item: ApplePayItem(name: "Shirt", price: "89.00"))
+        
         viewModel.startPayment()
     }
 }

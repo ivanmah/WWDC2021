@@ -169,9 +169,9 @@
 		2D0F070426AC8E9200D572AE /* ApplePay */ = {
 			isa = PBXGroup;
 			children = (
+				2D0F070926AC92A100D572AE /* ApplePayContentView.swift */,
 				2D0F070526AC8EA800D572AE /* ApplePayViewModel.swift */,
 				2D0F070726AC921E00D572AE /* ApplePayViewController.swift */,
-				2D0F070926AC92A100D572AE /* ApplePayContentView.swift */,
 				2D0F070B26AD428400D572AE /* ApplePayItem.swift */,
 				2D0F070D26AD5B6200D572AE /* ApplePayCoupon.swift */,
 			);

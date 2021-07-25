@@ -201,7 +201,7 @@ extension ApplePayViewModel: PKPaymentAuthorizationControllerDelegate {
                                         didAuthorizePayment payment: PKPayment,
                                         handler completion: @escaping (PKPaymentAuthorizationResult) -> Void) {
         let result = PKPaymentAuthorizationResult()
-        result.status = .pinRequired
+        result.status = .success
 
         completion(result)
     }
