@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct SwiftUIListSwipeActionView: View {
-    //var list = listItems.map { $0.copy() as! String }
-    var list : NSMutableArray = NSMutableArray.init(array: listItems)
+    
+    @State private var list = ["Red", "Orange", "Green", "Blue", "Purple","Yellow","Pink"]
+    
     var body: some View {
         List {
-            ForEach(listItems, id: \.self) { each in
+            ForEach(list, id: \.self) { each in
                 Text(each)
                     .swipeActions {
                         Button(role: .destructive) {
-                            list.remove(each)
+                            list.removeAll(where: { $0 == each })
                         } label: {
                             Label("Delete", systemImage: "xmark.bin")
                         }
