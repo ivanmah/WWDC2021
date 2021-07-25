@@ -47,12 +47,16 @@ extension ApplePayViewController {
     }
 
     private func setupPaymentButton() {
-        paymentButton = PKPaymentButton(paymentButtonType: .checkout, paymentButtonStyle: .automatic)
-        paymentButton.rx.tap.subscribe { [weak self] _ in
-            guard let self = self else { return }
+        let applePayStatus = viewModel.applePayStatus()
 
-            self.viewModel.startPayment()
-        }.disposed(by: disposeBag)
+        if applePayStatus.canMakePayments || applePayStatus.canSetupCards {
+            paymentButton = PKPaymentButton(paymentButtonType: .checkout, paymentButtonStyle: .automatic)
+            paymentButton.rx.tap.subscribe { [weak self] _ in
+                guard let self = self else { return }
+
+                self.viewModel.startPayment()
+            }.disposed(by: disposeBag)
+        }
     }
 
     private func setupConstraints() {

@@ -50,6 +50,11 @@ class ApplePayViewModel: NSObject {
         paymentController?.delegate = self
         paymentController?.present()
     }
+
+    func applePayStatus() -> (canMakePayments: Bool, canSetupCards: Bool) {
+        return (PKPaymentAuthorizationController.canMakePayments(),
+                PKPaymentAuthorizationController.canMakePayments(usingNetworks: supportedNetworks))
+    }
 }
 
 extension ApplePayViewModel {
