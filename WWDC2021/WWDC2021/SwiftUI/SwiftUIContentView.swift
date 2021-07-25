@@ -18,7 +18,7 @@ struct SwiftUIContentView: View {
             NavigationLink("AsyncImage", destination: SwiftUIAsyncImage())
             NavigationLink("TextField", destination: SwiftUITextfieldView())
         }
-        .navigationBarTitle("Swift UI", displayMode: .inline)
+        .navigationBarTitle("SwiftUI", displayMode: .inline)
     }
 }
 
