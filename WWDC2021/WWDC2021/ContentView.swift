@@ -26,6 +26,10 @@ struct ContentView: View {
                 NavigationLink("Swift 5.5: Async/Await") {
                     AsyncAwaitContentView()
                 }
+
+                NavigationLink("Apple Pay") {
+                    ApplePayContentView()
+                }
             }
             .navigationTitle("WWDC \(ColumnBreakpoint().parseArray(values: ["1", "2"]).count)021 Demo")
         }
