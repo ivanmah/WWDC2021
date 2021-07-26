@@ -8,8 +8,6 @@
 import UIKit
 import SwiftUI
 
-import SnapKit
-
 struct ButtonWithComparisonViewControllerRepresentable: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> ButtonWithComparisonViewController {
         return ButtonWithComparisonViewController()
@@ -58,21 +56,29 @@ extension ButtonWithComparisonViewController {
         if oldButton != nil {
             view.addSubview(oldButton)
 
-            oldButton.snp.remakeConstraints { make in
-                make.top.equalToSuperview().offset(100.0)
-                make.size.equalTo(CGSize(width: 200.0, height: 44.0))
-                make.centerX.equalToSuperview()
-            }
+            let constraints = [
+                oldButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 100.0),
+                oldButton.heightAnchor.constraint(equalToConstant: 44.0),
+                oldButton.widthAnchor.constraint(equalToConstant: 200.0),
+                oldButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            ]
+            oldButton.translatesAutoresizingMaskIntoConstraints = false
+
+            NSLayoutConstraint.activate(constraints)
         }
 
         if newButton != nil {
             view.addSubview(newButton)
 
-            newButton.snp.remakeConstraints { make in
-                make.top.equalTo(oldButton.snp.bottom).offset(20.0)
-                make.size.equalTo(CGSize(width: 200.0, height: 44.0))
-                make.centerX.equalToSuperview()
-            }
+            let constraints = [
+                newButton.topAnchor.constraint(equalTo: oldButton.bottomAnchor, constant: 20.0),
+                newButton.heightAnchor.constraint(equalToConstant: 44.0),
+                newButton.widthAnchor.constraint(equalToConstant: 200.0),
+                newButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            ]
+            newButton.translatesAutoresizingMaskIntoConstraints = false
+
+            NSLayoutConstraint.activate(constraints)
         }
     }
 }

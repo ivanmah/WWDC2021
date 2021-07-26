@@ -8,8 +8,6 @@
 import UIKit
 import SwiftUI
 
-import SnapKit
-
 struct ButtonWithToggleViewControllerRepresentable: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> ButtonWithToggleViewController {
         return ButtonWithToggleViewController()
@@ -51,10 +49,13 @@ extension ButtonWithToggleViewController {
         if firstButton != nil {
             view.addSubview(firstButton)
 
-            firstButton.snp.remakeConstraints { make in
-                make.top.equalToSuperview().offset(100.0)
-                make.centerX.equalToSuperview()
-            }
+            let constraints = [
+                firstButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 100.0),
+                firstButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            ]
+            firstButton.translatesAutoresizingMaskIntoConstraints = false
+
+            NSLayoutConstraint.activate(constraints)
         }
     }
 }

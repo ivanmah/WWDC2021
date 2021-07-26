@@ -13,7 +13,6 @@
 		2D5465712677B106001A7061 /* DocCDocumentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D54656D2677AF06001A7061 /* DocCDocumentation.swift */; };
 		2D5465722677B106001A7061 /* UIKitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D54656B2677AF06001A7061 /* UIKitButton.swift */; };
 		2D5465732677B106001A7061 /* NewInFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D54656C2677AF06001A7061 /* NewInFoundation.swift */; };
-		4B4595B75507DE0FE95E74ED /* Pods_WWDC2021Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5A0DA1277BD49D6933C5649 /* Pods_WWDC2021Framework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +23,6 @@
 		2D54656B2677AF06001A7061 /* UIKitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitButton.swift; sourceTree = "<group>"; };
 		2D54656C2677AF06001A7061 /* NewInFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInFoundation.swift; sourceTree = "<group>"; };
 		2D54656D2677AF06001A7061 /* DocCDocumentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocCDocumentation.swift; sourceTree = "<group>"; };
-		75FD61A9B5ABC69E9FE42F0A /* Pods-WWDC2021Framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWDC2021Framework.debug.xcconfig"; path = "Target Support Files/Pods-WWDC2021Framework/Pods-WWDC2021Framework.debug.xcconfig"; sourceTree = "<group>"; };
-		E5A0DA1277BD49D6933C5649 /* Pods_WWDC2021Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWDC2021Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE3172EE5370E5060450BD0B /* Pods-WWDC2021Framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWDC2021Framework.release.xcconfig"; path = "Target Support Files/Pods-WWDC2021Framework/Pods-WWDC2021Framework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +30,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B4595B75507DE0FE95E74ED /* Pods_WWDC2021Framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,8 +41,6 @@
 			children = (
 				2D5465552677AE78001A7061 /* WWDC2021Framework */,
 				2D5465542677AE78001A7061 /* Products */,
-				64EE17A07ED57C03425E9A58 /* Pods */,
-				479325D85F4253DC8278112E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,24 +73,6 @@
 			path = Code;
 			sourceTree = "<group>";
 		};
-		479325D85F4253DC8278112E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E5A0DA1277BD49D6933C5649 /* Pods_WWDC2021Framework.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		64EE17A07ED57C03425E9A58 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				75FD61A9B5ABC69E9FE42F0A /* Pods-WWDC2021Framework.debug.xcconfig */,
-				EE3172EE5370E5060450BD0B /* Pods-WWDC2021Framework.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -116,7 +91,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D54655C2677AE78001A7061 /* Build configuration list for PBXNativeTarget "WWDC2021Framework" */;
 			buildPhases = (
-				701E18A5359C33DC93FA4182 /* [CP] Check Pods Manifest.lock */,
 				2D54654E2677AE78001A7061 /* Headers */,
 				2D54654F2677AE78001A7061 /* Sources */,
 				2D5465502677AE78001A7061 /* Frameworks */,
@@ -172,31 +146,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		701E18A5359C33DC93FA4182 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WWDC2021Framework-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D54654F2677AE78001A7061 /* Sources */ = {
@@ -338,7 +287,6 @@
 		};
 		2D54655D2677AE78001A7061 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75FD61A9B5ABC69E9FE42F0A /* Pods-WWDC2021Framework.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -367,7 +315,6 @@
 		};
 		2D54655E2677AE78001A7061 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE3172EE5370E5060450BD0B /* Pods-WWDC2021Framework.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
