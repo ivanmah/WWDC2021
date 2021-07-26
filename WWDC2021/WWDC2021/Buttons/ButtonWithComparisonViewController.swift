@@ -41,7 +41,7 @@ extension ButtonWithComparisonViewController {
         oldButton = UIButton(type: .system)
         oldButton.backgroundColor = .systemBlue
         oldButton.titleLabel?.font = UIFont.systemFont(ofSize: 17.0)
-        oldButton.setTitle("Old UIButton", for: [])
+        oldButton.setTitle(String(localized: "Old UIButton"), for: [])
         oldButton.setTitleColor(.white, for: [])
         oldButton.layer.cornerRadius = 10.0
     }
@@ -49,7 +49,7 @@ extension ButtonWithComparisonViewController {
     private func setupNewButton() {
         newButton = UIButton(type: .system)
         newButton.configuration = .filled()
-        newButton.setTitle("New UIButton", for: [])
+        newButton.setTitle(String(localized: "New UIButton"), for: [])
     }
 
     private func setConstraints() {

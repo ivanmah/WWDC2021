@@ -47,12 +47,12 @@ extension ButtonWithPopupViewController {
 
         firstButton = UIButton(configuration: configuration)
         firstButton.menu = UIMenu(children: [
-            UIAction(title: "First", handler: handler),
-            UIAction(title: "Second", state: .on, handler: handler),
-            UIMenu(title: "Others", children: [
-                UIAction(title: "Third", handler: handler),
-                UIAction(title: "Fourth", handler: handler),
-                UIAction(title: "Fifth", handler: handler)
+            UIAction(title: String(localized: "First"), handler: handler),
+            UIAction(title: String(localized: "Second"), state: .on, handler: handler),
+            UIMenu(title: String(localized: "Others"), children: [
+                UIAction(title: String(localized: "Third"), handler: handler),
+                UIAction(title: String(localized: "Fourth"), handler: handler),
+                UIAction(title: String(localized: "Fifth"), handler: handler)
             ])
         ])
         firstButton.showsMenuAsPrimaryAction = true
