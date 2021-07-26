@@ -31,6 +31,7 @@
 		2DEB723B26A989C300A39074 /* ButtonWithConfigurationUpdateHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB723A26A989C300A39074 /* ButtonWithConfigurationUpdateHandlerViewController.swift */; };
 		2DEB723D26A98C0A00A39074 /* ButtonWithUIActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB723C26A98C0A00A39074 /* ButtonWithUIActionViewController.swift */; };
 		2DEB723F26A993E800A39074 /* ButtonWithToggleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB723E26A993E800A39074 /* ButtonWithToggleViewController.swift */; };
+		2DF8119E26AE8C950068B854 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8119D26AE8C950068B854 /* Localization.swift */; };
 		3CD6275826AC667F00B79F72 /* SwiftUIContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6275026AC667F00B79F72 /* SwiftUIContentView.swift */; };
 		3CD6275926AC667F00B79F72 /* SwiftUITextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6275126AC667F00B79F72 /* SwiftUITextfieldView.swift */; };
 		3CD6275A26AC667F00B79F72 /* SwiftUIListSearchableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6275226AC667F00B79F72 /* SwiftUIListSearchableView.swift */; };
@@ -77,6 +78,7 @@
 		2DEB723A26A989C300A39074 /* ButtonWithConfigurationUpdateHandlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithConfigurationUpdateHandlerViewController.swift; sourceTree = "<group>"; };
 		2DEB723C26A98C0A00A39074 /* ButtonWithUIActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithUIActionViewController.swift; sourceTree = "<group>"; };
 		2DEB723E26A993E800A39074 /* ButtonWithToggleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithToggleViewController.swift; sourceTree = "<group>"; };
+		2DF8119D26AE8C950068B854 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		3CD6275026AC667F00B79F72 /* SwiftUIContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIContentView.swift; sourceTree = "<group>"; };
 		3CD6275126AC667F00B79F72 /* SwiftUITextfieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUITextfieldView.swift; sourceTree = "<group>"; };
 		3CD6275226AC667F00B79F72 /* SwiftUIListSearchableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIListSearchableView.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				2D75AC4626AC0B8C00C0113A /* AutoComplete.swift */,
 				2D75AC4826AC0D7200C0113A /* ColumnBreakpoint.swift */,
 				2D75AC4A26AC0F8700C0113A /* MinimizeErrors.swift */,
+				2DF8119D26AE8C950068B854 /* Localization.swift */,
 			);
 			path = Xcode;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				3CD6275926AC667F00B79F72 /* SwiftUITextfieldView.swift in Sources */,
 				3CD6275A26AC667F00B79F72 /* SwiftUIListSearchableView.swift in Sources */,
 				2DEB723D26A98C0A00A39074 /* ButtonWithUIActionViewController.swift in Sources */,
+				2DF8119E26AE8C950068B854 /* Localization.swift in Sources */,
 				2DEB723B26A989C300A39074 /* ButtonWithConfigurationUpdateHandlerViewController.swift in Sources */,
 				2D75AC4726AC0B8C00C0113A /* AutoComplete.swift in Sources */,
 				2D75AC4E26AC523E00C0113A /* AsyncAwaitComparisonViewController.swift in Sources */,
