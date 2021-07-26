@@ -38,7 +38,7 @@ extension ButtonWithToggleViewController {
     }
 
     private func setupFirstButton() {
-        let primaryAction = UIAction(title: "Toggle On") { _ in }
+        let primaryAction = UIAction(title: String(localized: "Toggle On")) { _ in }
 
         firstButton = UIButton(primaryAction: primaryAction)
         firstButton.changesSelectionAsPrimaryAction = true
