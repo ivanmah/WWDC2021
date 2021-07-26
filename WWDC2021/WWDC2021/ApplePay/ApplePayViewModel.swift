@@ -70,7 +70,7 @@ extension ApplePayViewModel {
 
         if let selectedShippingMethod = selectedShippingMethod,
            selectedShippingMethod.amount.compare(NSDecimalNumber.zero) == .orderedDescending {
-            paymentSummaryItems.append(PKPaymentSummaryItem(label: "Shipping",
+            paymentSummaryItems.append(PKPaymentSummaryItem(label: String(localized: "Shipping"),
                                                             amount: selectedShippingMethod.amount,
                                                             type: .final))
 
@@ -81,7 +81,7 @@ extension ApplePayViewModel {
             let selectedCouponDiscount = NSDecimalNumber(string: selectedCoupon.discount)
 
            if selectedCouponDiscount.compare(NSDecimalNumber.zero) == .orderedDescending {
-               paymentSummaryItems.append(PKPaymentSummaryItem(label: "Coupon '\(selectedCoupon.code)' Discount",
+               paymentSummaryItems.append(PKPaymentSummaryItem(label: String(localized: "Coupon '\(selectedCoupon.code)' Discount"),
                                                                amount: selectedCouponDiscount,
                                                                type: .final))
 
@@ -92,8 +92,8 @@ extension ApplePayViewModel {
         let gstTotal = subTotal.multiplying(by: NSDecimalNumber(value: gstPercentage))
         let finalTotal = subTotal.adding(gstTotal)
 
-        paymentSummaryItems.append(PKPaymentSummaryItem(label: "GST", amount: gstTotal))
-        paymentSummaryItems.append(PKPaymentSummaryItem(label: "Total", amount: finalTotal, type: .final))
+        paymentSummaryItems.append(PKPaymentSummaryItem(label: String(localized: "GST"), amount: gstTotal))
+        paymentSummaryItems.append(PKPaymentSummaryItem(label: String(localized: "Total"), amount: finalTotal, type: .final))
     }
 
     private func updateShippingMethods() {
@@ -111,7 +111,7 @@ extension ApplePayViewModel {
     }
 
     private func getSelfCollectionShippingMethod() -> PKShippingMethod? {
-        let selfCollectionShippingMethod = PKShippingMethod(label: "Self-Collection", amount: .zero)
+        let selfCollectionShippingMethod = PKShippingMethod(label: String(localized: "Self-Collection"), amount: .zero)
         selfCollectionShippingMethod.identifier = "SELFCOLLECTION"
 
         return selfCollectionShippingMethod
@@ -127,7 +127,7 @@ extension ApplePayViewModel {
         let startComponents = calendar.dateComponents([.calendar, .year, .month, .day], from: shippingStart)
         let endComponents = calendar.dateComponents([.calendar, .year, .month, .day], from: shippingEnd)
 
-        let deliveryShippingMethod = PKShippingMethod(label: "Delivery", amount: NSDecimalNumber(string: "5.00"))
+        let deliveryShippingMethod = PKShippingMethod(label: String(localized: "Delivery"), amount: NSDecimalNumber(string: "5.00"))
         deliveryShippingMethod.identifier = "DELIVERY"
         deliveryShippingMethod.dateComponentsRange = PKDateComponentsRange(start: startComponents, end: endComponents)
 
@@ -173,12 +173,12 @@ extension ApplePayViewModel {
             if matchedCoupons.isEmpty {
                 selectedCoupon = nil
 
-                couponError = PKPaymentRequest.paymentCouponCodeInvalidError(localizedDescription: "Invalid Coupon Code")
+                couponError = PKPaymentRequest.paymentCouponCodeInvalidError(localizedDescription: String(localized: "Invalid Coupon Code"))
             } else if let firstCoupon = matchedCoupons.first {
                 if firstCoupon.isExpired() {
                     selectedCoupon = nil
 
-                    couponError = PKPaymentRequest.paymentCouponCodeExpiredError(localizedDescription: "Expired Coupon Code")
+                    couponError = PKPaymentRequest.paymentCouponCodeExpiredError(localizedDescription: String(localized: "Expired Coupon Code"))
                 } else {
                     selectedCoupon = firstCoupon
                 }
