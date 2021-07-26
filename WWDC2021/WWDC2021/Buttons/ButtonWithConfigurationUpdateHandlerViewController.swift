@@ -37,7 +37,7 @@ extension ButtonWithConfigurationUpdateHandlerViewController {
 
     private func setupFirstButton() {
         var configuration = UIButton.Configuration.tinted()
-        configuration.title = "Add to Cart"
+        configuration.title = String(localized: "Add to Cart")
         configuration.image = UIImage(systemName: "cart.badge.plus")
         configuration.imagePadding = 10.0
         configuration.imagePlacement = .trailing

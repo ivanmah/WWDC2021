@@ -40,7 +40,7 @@ extension AsyncAwaitComparisonViewController {
     }
 
     private func setupOldJSONButton() {
-        let primaryAction = UIAction(title: "Old JSON") { [weak self] _ in
+        let primaryAction = UIAction(title: String(localized: "Old JSON")) { [weak self] _ in
             guard let self = self else { return }
 
             self.oldJSONButtonClicked()
@@ -56,7 +56,7 @@ extension AsyncAwaitComparisonViewController {
     }
 
     private func setupNewJSONButton() {
-        let primaryAction = UIAction(title: "New JSON") { [weak self] _ in
+        let primaryAction = UIAction(title: String(localized: "New JSON")) { [weak self] _ in
             guard let self = self else { return }
 
             Task {
@@ -141,9 +141,9 @@ extension AsyncAwaitComparisonViewController {
     }
 
     private func showAlert(text: String) {
-        let okAction = UIAlertAction(title: "OK", style: .default)
+        let okAction = UIAlertAction(title: String(localized: "OK"), style: .default)
 
-        let alertController = UIAlertController(title: "Hello Team", message: text, preferredStyle: .alert)
+        let alertController = UIAlertController(title: String(localized: "Hello Team"), message: text, preferredStyle: .alert)
         alertController.addAction(okAction)
 
         present(alertController, animated: true)

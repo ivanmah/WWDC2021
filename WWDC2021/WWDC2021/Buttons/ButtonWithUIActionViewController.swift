@@ -51,7 +51,7 @@ extension ButtonWithUIActionViewController {
         }
 
         var configuration = UIButton.Configuration.tinted()
-        configuration.title = "Add to Cart"
+        configuration.title = String(localized: "Add to Cart")
         configuration.titlePadding = 10.0
         configuration.image = UIImage(systemName: "cart.badge.plus")
         configuration.imagePadding = 10.0
@@ -68,7 +68,7 @@ extension ButtonWithUIActionViewController {
             config?.showsActivityIndicator = self.isBusy
 
             if self.count > 0 {
-                config?.subtitle = "\(self.count) item(s) added to cart"
+                config?.subtitle = String(localized: "\(self.count) item(s) added to cart")
             }
 
             button.configuration = config
