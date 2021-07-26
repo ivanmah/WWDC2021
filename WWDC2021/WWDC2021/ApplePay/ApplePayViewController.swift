@@ -9,10 +9,6 @@ import PassKit
 import SwiftUI
 import UIKit
 
-import RxCocoa
-import RxSwift
-import SnapKit
-
 struct ApplePayViewControllerRepresentable: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> ApplePayViewController {
         return ApplePayViewController()
@@ -24,7 +20,6 @@ struct ApplePayViewControllerRepresentable: UIViewControllerRepresentable {
 }
 
 class ApplePayViewController: UIViewController {
-    private let disposeBag = DisposeBag()
     private let viewModel = ApplePayViewModel()
 
     var paymentButton: PKPaymentButton!
@@ -51,11 +46,7 @@ extension ApplePayViewController {
 
         if applePayStatus.canMakePayments || applePayStatus.canSetupCards {
             paymentButton = PKPaymentButton(paymentButtonType: .checkout, paymentButtonStyle: .automatic)
-            paymentButton.rx.tap.subscribe { [weak self] _ in
-                guard let self = self else { return }
-
-                self.viewModel.startPayment()
-            }.disposed(by: disposeBag)
+            paymentButton.addTarget(self, action: #selector(paymentButtonClicked), for: .touchUpInside)
         }
     }
 
@@ -63,12 +54,22 @@ extension ApplePayViewController {
         if paymentButton != nil {
             view.addSubview(paymentButton)
 
-            paymentButton.snp.remakeConstraints { make in
-                make.top.equalToSuperview().offset(100.0)
-                make.leading.equalToSuperview().offset(20.0)
-                make.trailing.equalToSuperview().offset(-20.0)
-                make.height.equalTo(44.0)
-            }
+            let constraints = [
+                paymentButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 100.0),
+                paymentButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20.0),
+                paymentButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20.0),
+                paymentButton.heightAnchor.constraint(equalToConstant: 44.0),
+            ]
+            paymentButton.translatesAutoresizingMaskIntoConstraints = false
+
+            NSLayoutConstraint.activate(constraints)
         }
+    }
+}
+
+extension ApplePayViewController {
+    @objc
+    private func paymentButtonClicked() {
+        viewModel.startPayment()
     }
 }
