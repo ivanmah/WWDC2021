@@ -8,10 +8,6 @@
 import UIKit
 import SwiftUI
 
-import RxCocoa
-import RxSwift
-import SnapKit
-
 struct AsyncAwaitComparisonViewControllerRepresentable: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> AsyncAwaitComparisonViewController {
         return AsyncAwaitComparisonViewController()
@@ -23,7 +19,6 @@ struct AsyncAwaitComparisonViewControllerRepresentable: UIViewControllerRepresen
 }
 
 class AsyncAwaitComparisonViewController: UIViewController {
-    private let disposeBag = DisposeBag()
     private let viewModel = AsyncAwaitComparisonViewModel()
 
     var oldJSONButton: UIButton!
@@ -45,56 +40,62 @@ extension AsyncAwaitComparisonViewController {
     }
 
     private func setupOldJSONButton() {
+        let primaryAction = UIAction(title: "Old JSON") { [weak self] _ in
+            guard let self = self else { return }
+
+            self.oldJSONButtonClicked()
+        }
+
         var configuration = UIButton.Configuration.tinted()
         configuration.buttonSize = .large
         configuration.image = UIImage(systemName: "icloud")
         configuration.imagePlacement = .trailing
         configuration.imagePadding = 10.0
-        configuration.title = "Old JSON"
 
-        oldJSONButton = UIButton(configuration: configuration)
-        oldJSONButton.rx.tap.subscribe { [weak self] _ in
-            guard let self = self else { return }
-
-            self.oldJSONButtonClicked()
-        }.disposed(by: disposeBag)
+        oldJSONButton = UIButton(configuration: configuration, primaryAction: primaryAction)
     }
 
     private func setupNewJSONButton() {
+        let primaryAction = UIAction(title: "New JSON") { [weak self] _ in
+            guard let self = self else { return }
+
+            Task {
+                await self.newJSONButtonClicked()
+            }
+        }
+
         var configuration = UIButton.Configuration.tinted()
         configuration.buttonSize = .large
         configuration.image = UIImage(systemName: "icloud.fill")
         configuration.imagePlacement = .trailing
         configuration.imagePadding = 10.0
-        configuration.title = "New JSON"
 
-        newJSONButton = UIButton(configuration: configuration)
-        newJSONButton.rx.tap.subscribe { [weak self] _ in
-            guard let self = self else { return }
-
-            Task.detached {
-                await self.newJSONButtonClicked()
-            }
-        }.disposed(by: disposeBag)
+        newJSONButton = UIButton(configuration: configuration, primaryAction: primaryAction)
     }
 
     private func setupConstraints() {
         if oldJSONButton != nil {
             view.addSubview(oldJSONButton)
 
-            oldJSONButton.snp.remakeConstraints { make in
-                make.top.equalToSuperview().offset(100.0)
-                make.centerX.equalToSuperview()
-            }
+            let constraints = [
+                oldJSONButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 100.0),
+                oldJSONButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            ]
+            oldJSONButton.translatesAutoresizingMaskIntoConstraints = false
+
+            NSLayoutConstraint.activate(constraints)
         }
 
         if newJSONButton != nil {
             view.addSubview(newJSONButton)
 
-            newJSONButton.snp.remakeConstraints { make in
-                make.top.equalTo(oldJSONButton.snp.bottom).offset(20.0)
-                make.centerX.equalToSuperview()
-            }
+            let constraints = [
+                newJSONButton.topAnchor.constraint(equalTo: oldJSONButton.bottomAnchor, constant: 20.0),
+                newJSONButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            ]
+            newJSONButton.translatesAutoresizingMaskIntoConstraints = false
+
+            NSLayoutConstraint.activate(constraints)
         }
     }
 }
