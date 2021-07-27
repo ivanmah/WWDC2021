@@ -226,12 +226,12 @@
 			isa = PBXGroup;
 			children = (
 				3CD6275026AC667F00B79F72 /* SwiftUIContentView.swift */,
-				3CD6275126AC667F00B79F72 /* SwiftUITextfieldView.swift */,
 				3CD6275226AC667F00B79F72 /* SwiftUIListSearchableView.swift */,
-				3CD6275326AC667F00B79F72 /* SwiftUIListSeparatorView.swift */,
 				3CD6275426AC667F00B79F72 /* SwiftUIListSwipeActionView.swift */,
 				3CD6275526AC667F00B79F72 /* SwiftUIListPullToRefreshView.swift */,
+				3CD6275326AC667F00B79F72 /* SwiftUIListSeparatorView.swift */,
 				3CD6275626AC667F00B79F72 /* SwiftUIAsyncImage.swift */,
+				3CD6275126AC667F00B79F72 /* SwiftUITextfieldView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
