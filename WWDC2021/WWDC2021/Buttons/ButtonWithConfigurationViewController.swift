@@ -27,6 +27,12 @@ class ButtonWithConfigurationViewController: UIViewController {
     var filledButton: UIButton!
     var tinitedButton: UIButton!
     
+    //configuration size
+    var miniButton : UIButton!
+    var smallButton : UIButton!
+    var mediumButton : UIButton!
+    var largeButton : UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,6 +48,11 @@ extension ButtonWithConfigurationViewController {
         setupPlainButton()
         setupFilledButton()
         setupTintedButton()
+        
+        setupMiniButton()
+        setupSmallButton()
+        setupMediumButton()
+        setupLargeButton()
         
         setupConstraints()
     }
@@ -86,6 +97,38 @@ extension ButtonWithConfigurationViewController {
         tinitedButton = UIButton(configuration: configuration)
     }
     
+    private func setupMiniButton() {
+        var configuration = UIButton.Configuration.filled()
+        configuration.buttonSize = UIButton.Configuration.Size.mini
+        configuration.title = String(localized: "Mini")
+        
+        miniButton = UIButton(configuration: configuration)
+    }
+    
+    private func setupSmallButton() {
+        var configuration = UIButton.Configuration.filled()
+        configuration.title = String(localized: "Small")
+        configuration.buttonSize = UIButton.Configuration.Size.small
+        smallButton = UIButton(configuration: configuration)
+    }
+    
+    private func setupMediumButton() {
+        var configuration = UIButton.Configuration.filled()
+        configuration.buttonSize = UIButton.Configuration.Size.medium
+        configuration.title = String(localized: "Medium")
+        
+        mediumButton = UIButton(configuration: configuration)
+        
+    }
+    
+    private func setupLargeButton() {
+        var configuration = UIButton.Configuration.filled()
+        configuration.buttonSize = UIButton.Configuration.Size.large
+        configuration.title = String(localized: "Large")
+        
+        largeButton = UIButton(configuration: configuration)
+    }
+    
 
     private func setupConstraints() {
         if firstButton != nil {
@@ -104,7 +147,7 @@ extension ButtonWithConfigurationViewController {
             view.addSubview(grayButton)
             
             let contraints = [
-                grayButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 200.0),
+                grayButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 300.0),
                 grayButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40)
             ]
             grayButton.translatesAutoresizingMaskIntoConstraints = false
@@ -145,6 +188,55 @@ extension ButtonWithConfigurationViewController {
 
             tinitedButton.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint.activate(constraints)
+        }
+        
+        if miniButton != nil {
+            view.addSubview(miniButton)
+            
+            let constraints = [
+                miniButton.topAnchor.constraint(equalTo: grayButton.bottomAnchor, constant: 100),
+                miniButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40)
+            ]
+            
+            miniButton.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate(constraints)
+        }
+        
+        if smallButton != nil {
+            view.addSubview(smallButton)
+            
+            let constraints = [
+                smallButton.topAnchor.constraint(equalTo: miniButton.topAnchor),
+                smallButton.leadingAnchor.constraint(equalTo: miniButton.trailingAnchor, constant: 20)
+                
+            ]
+            
+            smallButton.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate(constraints)
+        }
+        
+        if mediumButton != nil {
+            view.addSubview(mediumButton)
+            
+            let constraints = [
+                mediumButton.topAnchor.constraint(equalTo: miniButton.topAnchor),
+                mediumButton.leadingAnchor.constraint(equalTo: smallButton.trailingAnchor, constant: 20)
+            ]
+            
+            mediumButton.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate(constraints)
+        }
+        
+        if largeButton != nil {
+            view.addSubview(largeButton)
+            
+            let constraints = [
+                largeButton.topAnchor.constraint(equalTo: miniButton.topAnchor),
+                largeButton.leadingAnchor.constraint(equalTo: mediumButton.trailingAnchor,constant: 20)
+            ]
+            largeButton.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate(constraints)
+            
         }
         
     }
