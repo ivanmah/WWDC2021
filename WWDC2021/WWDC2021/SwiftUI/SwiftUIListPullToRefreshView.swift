@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct SwiftUIListPullToRefreshView: View {
+    
+    @State private var listItems = ["Red", "Orange", "Green" , "Grey" , "Blue", "Purple","Yellow","Pink"]
     @State var selected : String = ""
     var body: some View {
         List(listItems, id: \.self) { each in
             Text(each)
         }.refreshable {
-            //await getDataFromAPI()
+            //listItems = try await getDataFromAPI()
+            listItems.append("New element added")
         }
     }
 }
