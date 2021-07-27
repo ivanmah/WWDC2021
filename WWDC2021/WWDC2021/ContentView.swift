@@ -15,12 +15,12 @@ struct ContentView: View {
                     ButtonsContentView()
                 }
 
-                NavigationLink("Changes in Foundation") {
-                    FoundationContentView()
-                }
-
                 NavigationLink("SwiftUI") {
                     SwiftUIContentView()
+                }
+
+                NavigationLink("Changes in Foundation") {
+                    FoundationContentView()
                 }
 
                 NavigationLink("Swift 5.5: Async/Await") {
