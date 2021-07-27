@@ -12,18 +12,25 @@ let listItems = ["Red", "Orange", "Green" , "Grey" , "Blue", "Purple","Yellow","
 struct SwiftUIListSearchableView: View {
     
     @State private var searchQuery = ""
+    @State var filteredListView : [String] = listItems
     
     var searchResult : [String] {
         return listItems.filter({ $0.contains(searchQuery)})
     }
     
     var body: some View {
-        List(listItems, id: \.self) { colour in
+        List(filteredListView, id: \.self) { colour in
             Text(colour)
         }
         .searchable(text: $searchQuery, prompt: "Search Colour", suggestions: {
             ForEach(searchResult, id: \.self) { result in
                 Text("Searching for \(result)?").searchCompletion(result)
+            }
+        }).onChange(of: searchQuery, perform: { newValue in
+            if !newValue.isEmpty {
+                filteredListView = listItems.filter {$0.contains(newValue) }
+            } else {
+                filteredListView = listItems
             }
         })
         .navigationBarTitle("List", displayMode: .inline)
