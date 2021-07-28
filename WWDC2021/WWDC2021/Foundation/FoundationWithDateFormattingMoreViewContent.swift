@@ -19,20 +19,13 @@ struct FoundationWithDateFormattingMoreViewContent: View {
                 Text("Abbreviated Date: **\(now.formatted(.dateTime.year().day().month()))**")
                 Text("Full Date: **\(now.formatted(.dateTime.year().day().month(.wide)))**")
                 Text("Day only: **\(now.formatted(.dateTime.weekday(.wide)))**")
-                Text("ISO8601 Date and Time: **\(now.formatted(.iso8601))**")
                 Text("ISO8601 Date: **\(now.formatted(.iso8601.year().month().day().dateSeparator(.dash)))**")
-                Text("Abbreviated Date Range: **\((now ..< getLater()).formatted())**")
-                Text("Full Date Range: **\((now ..< getLater()).formatted(date: .omitted, time: .complete))**")
-                    .multilineTextAlignment(.center)
+                Text("Abbreviated Date Range: **\((now ..< getLater()).formatted(date: .abbreviated, time:.omitted))**").multilineTextAlignment(.center)
             }
 
             Group {
-                Text("Time duration: **\((now ..< getLater()).formatted(.timeDuration))**")
-                Text("Time components: **\((now ..< getLater()).formatted(.components(style: .wide)))**")
-                Text("Relative Time: **\(getLater().formatted(.relative(presentation: .named, unitsStyle: .wide)))**")
                 Text("Date AttributedString: **\(getDateAttributedString())**")
-                Text("First String To Date: **\(getFirstStringToDateFormatting().formatted())**")
-                Text("Second String To Date: **\(getSecondStringToDateFormatting().formatted())**")
+                Text("String To Date: **\(getFirstStringToDateFormatting().formatted())**")
             }
         }
         .navigationTitle("More DateFormatting")
